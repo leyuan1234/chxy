@@ -1,0 +1,221 @@
+@media only screen and (max-device-width: 1024px) {
+.column{
+	float: none;
+	width: auto;
+}
+#sidebar{
+	display: none;
+}
+}
+body{
+	text-align: center;
+	font-size: 14px;
+	width: 1920px;
+}
+.wrapper{
+	position: absolute;
+	margin: 0px auto;
+	width: 1220px;
+}
+
+
+
+.wrapper .boxbottom .boxmain .pic{
+	display:none;
+	
+}
+.wrapper .boxbottom .boxmain .video{
+	display: none;
+	
+}
+
+.wrapper .boxbottom .boxmain .message{
+	display: block;
+}
+
+
+.boxmain .pic{
+	background-color:#666666;
+}
+.boxmain .pic .pictext{
+	/*float: left;*/
+	position: absolute;
+}
+.boxmain .video .videotext{
+	float: left;
+	position: absolute;
+	font-size: 14px;
+}
+.boxmain .pic .pictext .pictext1,.pictext2{
+	background-color: #b3a57d;
+	height: 35px;
+	width: 100px;
+	margin-top:20px;
+	margin-left: 40px;
+	line-height: 30px;
+	padding-right: 5px;
+	float: left;
+	border-radius: 10px;
+}
+.boxmain .pic .pictext .pictext1:hover,.pictext2:hover{
+	background-color: #CCB984;
+	border-radius: 50px;
+}
+.boxmain .pic .pictext3{
+	float: left;
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+	background-color:#eeebe2;
+	border-radius: 10px;
+}
+.boxmain .pic .pictext4{
+	float: left;
+	height: 25px;
+	width: 100px;
+	line-height: 20px;
+	border-radius: 10px;
+}
+.boxmain .pic .pictext .pictext-left{
+	float: left;
+	line-height: 30px;
+	margin-left: 400px;
+	margin-top: 20px;
+	background-color:#eeebe2;
+	border-radius: 10px;
+	display: inline-block;
+}
+.boxmain .pic .pictext .pictext-left .huishou,.fankui{
+	float: right;
+	height: 30px;
+	width: 100px;
+	background-color:#b3a57d;
+	border-radius: 10px;
+}
+
+
+.boxmain .video .videotext .videotext1{
+	background-color: #949494;
+	height: 35px;
+	float: right;
+}
+.boxmain .pic .pictext .pictext1 a{
+	font-size: 16px;
+}
+.boxmain .video .videotext .videotext1 a{
+	font-size: 16px;
+}
+.boxmain .pic .mainxiangce{
+	position: absolute;
+	margin-top: 50px;
+}
+.boxmain .video .mainviedeoce{
+	position: absolute;
+	margin-top: 50px;
+}
+.boxmain .pic .mainxiangce .xiangce{
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin-left: 10px;
+}
+.boxmain .video .mainviedeoce .videoce{
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin-left: 10px;
+}
+.boxmain .pic .picwall{
+	position: absolute;
+	margin: 300px 100px;
+
+}
+.boxmain .video .videowall{
+	position: absolute;
+	margin: 300px 100px;
+
+}
+.boxmain .pic .picwall .picone{
+	width:190px;
+	height: 150px;
+	overflow: hidden;
+	border:1px dashed #000000 ;
+}
+.boxmain .video .videowall .videoone{
+	width:190px;
+	height: 150px;
+	overflow: hidden;
+	border:1px dashed #000000 ;
+}
+
+
+
+.boxmain .message{
+	margin: 0 auto;
+}
+.boxmain .message .message-bottomboxs{
+	position: absolute;
+	border:1px #949494 solid;
+	width: 1220px;
+	position: absolute;
+}
+.message .user0{
+	position: absolute;
+	margin-left:1000px ;
+}
+
+.user-img{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.user-name{
+	font-size: 18px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.lcons{
+	position: absolute;
+	margin-top: 40px;
+	
+}
+.message-lcon-left{
+	float: left;
+}
+.message-lcon-right{
+	float: left;
+	margin-left: 300px;
+	margin-top: 10px;
+}
+.message .message-bottomboxs .message-bottom1{
+	height: 200px;
+	border:1px solid #E0E0E0;
+	width: 100%;
+}
+.message .message-bottomboxs .message-bottom1 .lconleft{
+	height: 200px;
+	width: 150px;
+	background-color: #EFB480;
+}
+.message .message-bottomboxs .message-bottom1 .lconright{
+	float: left;
+	width: 100px;
+	position: absolute;
+}
+.message-bottom1 .lconright .right-lcon-bottom ul{
+	float: left;
+	width: 300px;
+	margin-left: 200px;
+}
+.message-bottom1 .lconright .right-lcon-bottom ul li{
+	margin-top: 100px;
+	padding-left:20px;
+	float: left;
+}
+.message-bottom1 .lconright .right-lcon-bottom{
+	margin-left: 350px;
+}

@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+ }
+body{
+	background:#f5f5f5 !important;
+	}
+.head_t{
+	 width: 100%;
+     min-width: 1190px;
+     background: #f3f3f3;
+     border-bottom: 1px solid #DEDEDE;
+	}
+.inner_clearfix{
+	width: 1190px;
+    height: 30px;
+    margin: 0 auto
+	}
+.f1{
+  float:left;	
+	}
+.fr{
+	float:right;
+	}
+.head_t .tools li {
+    border: 1px solid #F3F3F3;
+    border-bottom: none;
+    float: left;
+    display: inline;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+   }
+ .head_t .user li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    display: inline;
+    position: relative;
+    border-bottom: none;
+    z-index: 10;
+	margin-left:40px;
+  }
+  .f1 li a{
+	 color:#ecc30a;
+	 text-decoration:none;
+	  }
+  .fr li a{
+	  color:#333;
+	  text-decoration:none;
+	  }
+.head_m {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 24px 0;
+	}
+.head_m h1{
+	float:left
+	}
+.head_m .search{
+	margin-left:480px;
+	margin-top:-56px;
+	}
+.head_background{
+	width:100%;
+	background:#fff;
+	border-bottom:4px solid #ecc30a;
+	}
+.head-nav{
+	width:1190px;
+	margin:0 auto;
+	height:100px;
+	}
+.head_m {
+	float:left;
+	width:120px;
+	margin-left:-94px;
+	margin-top:-8px;
+	height:50px;
+	}
+.nav{
+    float:left;
+	margin-left:90px;
+	margin-top:45px;
+	}
+.nav ul .active a{
+	color:#ecc30a;
+	}
+.nav ul li{
+    display:inline-block;
+	font-size:16px;
+	padding-right:100px;
+	}
+.nav ul li a{
+	color:#000;
+	text-decoration:none;
+	}
+.nav ul li a:hover{
+	color:#ecc30a;
+	}
+.search{
+	float:right;
+	margin-top:40px;
+	position:relative;
+	}
+.search span{
+	position:absolute;
+	right:18px;
+	top:8px;
+	color:#333;
+	}
+<!--内容部分-->
+.container{
+	width:1190px;
+	margin:0 auto;
+	}
+.dog_food_area {
+	float:left;
+	margin-top:20px;
+	}
+.dog_food_area ul{
+	float:left;
+	}
+.dog_food_area ul li{
+	display:inline-block;
+	font-size:14px;
+	color:#7a7a7a;
+    float:left;
+    margin-right:20px;
+	}
+.dog_food_area ul li a{
+	text-decoration:none;
+    color:#7a7a7a;
+	}
+.area_second{
+	width:100%;
+	float:left;
+	background:#fff;
+	}
+	
+.area_second ul li{
+	padding: 8px 5px;
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+	width:1190px;
+}
+.area_second li .dt {
+    float: left;
+    font-weight: 700;
+    color: #989898;
+    margin: 4px 0 4px 10px;
+    display: inline;
+    padding: 2px;
+}
+.area_second li .dd {
+    float: left;
+    width: auto;
+    margin-left:30px;
+}
+.area_second li .dd a {
+    float: left;
+    padding: 2px 6px;
+    margin: 4px 10px 4px 0;
+    display: inline;
+    overflow: hidden;
+}
+.area_second li .dd .cur {
+    background: #F60;
+    color: #fff;
+}
+.sort{
+	float:left;
+	}
+.sort .dt{
+	float:left;
+	padding:3px 16px;
+	color:#7a7a7a;
+	}
+.sort .dd{
+	float:left;
+	}
+.sort .dd a{
+	float:left;
+	padding:3px 20px;
+	margin-right:14px;
+	background:url(../img/shop/order_down.png) no-repeat right center;
+	color:#7a7a7a;
+	}
+.list_mt{
+	float: left;
+    width: 100%;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e8e8e8;
+	}
+.img_show{
+	overflow: hidden;
+    margin-top: 20px;
+	float:left;
+	}
+.img_show ul{
+	width: 1220px;
+	}
+.img_show ul li{
+	width: 234px;
+    height: 325px;
+    float: left;
+    background-color: #fff;
+    margin-right: 10px;
+	margin-bottom: 30px;
+	display:inline-block;
+	background:#fff;
+	}
+.img_show ul li:hover{
+	transition: all 0.2s linear;
+    transform: translate(0,-3px);
+	}
+.list_box li .in{
+	padding:12px 15px;
+	}
+.pic a{
+	text-decoration:none;
+	color:#7a7a7a;
+	}
+.pic a img{
+	width:200px;
+	height:200px;
+	dispaly:block;
+	}
+.list_box li .name{
+	text-align:left;
+	height:36px;
+	line-height:18px;
+	overflow:hidden;
+	margin-top: 15px;
+    display: -webkit-box !important;
+    text-overflow: ellipsis;
+    word-break: break-all;
+	}
+.list_box li .name a{
+	color:#919191;
+	}
+.list_box li .name a:hover{
+	color:#f60;
+	text-decoration:none;
+	}
+.list_box li .num{
+	padding-top:15px;
+	text-align:left;
+	font-family: "SimSun";
+	}
+.f1{
+	float:left;
+	}
+.list_box li .price{
+	display:block;
+	font-size:14px;
+	font-weight:700;
+	color:#ff3366;
+	font-family:"Microsoft Yahei";
+	}
+.list_box li .price del{
+	color: #C5C5C5;
+    padding-left: 2px;
+    position: relative;
+    display: block;
+    font-size: 12px;
+	}
+.list_box li .count{
+	line-height: 24px;
+	margin-top: 13px;
+	color: #c5c5c5;
+	}

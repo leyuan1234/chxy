@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style:none;
+	
+}
+.pets{
+	width:1120px;
+	height:920px;
+	margin:0 auto;
+}
+.pets h1{
+	text-align:center;
+	color:#ecc30a;
+	line-height:120px;
+}
+.pets .pets-show{
+	width:1120px;
+	height:800px;
+}
+.pets .pets-show .img-show li{
+	width:352px;
+	height:232px;
+	float:left;
+	overflow:hidden;
+	margin-right:32px;
+	margin-bottom:36px;
+	background:#000;
+	position:relative;
+}
+.pets .pets-show .img-show .clear{
+	margin-right:0px;
+}
+.pets .pets-show .img-show li:hover img{
+	transition:all linear 0.35s ;
+	opacity:0.7;
+}
+.pets .pets-show .img-show .style div{
+	position:absolute;
+	top:10%;
+	left:10%;
+	border:1px solid #fff;
+	text-align:center;
+	width:80%;
+	height:80%;
+	color:#fff;
+	transform:scale(0,0);
+}
+.pets .pets-show .img-show .style:hover div{
+	transition:all linear 0.35s ;
+	transform:scale(1,1);
+}
+.pets .pets-show .img-show .style div h3{
+	margin-top:20%;
+	transform:scale(0,0);
+}
+.pets .pets-show .img-show .style div p{
+	transform:scale(0,0);
+}
+	
+.pets .pets-show .img-show .style:hover div p{
+	transition:all linear 0.35s ;
+	transform:scale(1,1);
+}
+.pets .pets-show .img-show .style:hover div h3{
+	transition:all linear 0.35s ;
+	transform:scale(1,1);
+}
+
+.pets  .page{
+	width:1120px;
+	height:50px;
+	
+}
+.pets .page .page-list{
+	width:500px;
+	height:50px;
+	margin-left:400px;
+}
+
+.pets .page .page-list li{
+	float:left;
+	margin-right:30px;
+	height:24px;
+	line-height:24px;
+	padding:0px 5px;
+	
+}
+.pets .page li a{
+	text-decoration:none;
+	color:#000;
+}
+.pets .page .page-list .active{
+	background:#ecc30a;
+}
+.pets .page .page-list li:hover{
+	background:#ecc30a;
+}
+		
+	
+
+
+
+
+
+
+
+

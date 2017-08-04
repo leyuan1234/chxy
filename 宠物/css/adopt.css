@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.search-pet a{
+	display:block;
+	width:50px;
+	height:150px;
+	position:fixed;
+	top:380px;
+	right:0;
+	background:#ecc30a;
+	color:#FFF;
+	border-radius:5px;
+	text-align:center;
+	text-decoration:none;
+	padding-top:20px;
+	}
+.search-pet a p{
+	font-size:20px;
+	}	
+.header{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	margin:0 auto;
+	position:relative;
+	background:#333;
+	position:relative;
+}
+.header ul{
+	position:absolute;
+	right:368px;
+	top:0px;
+}
+.header ul li{
+	list-style:none;
+	float:left;
+	margin-right:30px;
+	
+}
+.header ul li a{
+	color:#ecc30a;
+	text-decoration:none;
+	}
+.header ul .active a{
+	color:#FFF;
+	}
+
+.mark {
+	width:1120px;
+    background:#FFC;
+	height:200px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	}
+.mark a{color:#000;text-decoration:none;}
+.mark h3{
+	padding-top:18px;
+	line-height:60px;
+	}
+.mark span {
+	color:#F00;
+	}
+.mark a .Two-microcode{
+	position:absolute;
+	left:1115px;
+	top:0px;
+	display:none;
+	}
+.mark a:hover .Two-microcode{
+	display:block;
+	}
+.adopt{
+	width:1120px;
+	height:30px;
+	line-height:30px;
+	margin:0 auto;
+	margin-top:50px;
+}
+.adopt .type{
+	width:400px;
+	height:30px;
+}
+.adopt .type-left{
+	float:left;
+}
+.adopt .type-right{
+	float:left;
+}
+
+.adopt .type dd,.adopt .type dt{
+	float:left;
+}
+.adopt .type dd{
+	margin-left:20px;
+	font-size:14px;
+}
+.adopt .type dd:hover{
+	cursor:pointer;
+	color:#C93;
+}
+.adopt .type dt{
+	font-size:18px;
+	font-weight:bold;
+}
+.adopt .type .active{
+	color:#C93;
+}
+
+.adopt-show{
+	width:1120px;
+	height:300px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.adopt-show ul li{
+	list-style:none;
+	float:left;
+	width:204px;
+	height:312px;
+	margin-right:20px;
+	margin-bottom:22px;
+	border:1px solid #ccc;
+	border-sizing:border-box;
+}
+.adopt-show ul li:hover{
+	transition: all 0.35s linear;
+    transform: translate(0,-3px);
+    box-shadow: 0 5px 3px #ccc;
+	
+}
+.adopt-show ul li img{
+	width:200px;
+	height:220px;
+}
+.adopt-show ul li .sale{
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+}
+.adopt-show ul li .sale p{
+	padding:10px;
+	font-size:14px;
+	color:#aaa;
+}
+.adopt-show ul .clear{
+	margin-right:0px;
+}
+	
+
+.adopt-show ul li .author img{
+	width:34px;
+	height:34px;
+	float:left;
+	margin-right:5px;
+}
+.adopt-show ul li .author p{
+	font-size:14px;
+	color:#9a9a9a;
+	float:left;
+
+}
+p{
+margin:0!important;	
+	}
+.footer{
+width:1920px;
+height:200px;
+background:#333;
+margin-top:800px;
+}
+

@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+ }
+body{
+	background:#f5f5f5 !important;
+	}
+.head_t{
+	 width: 100%;
+     min-width: 1190px;
+     background: #f3f3f3;
+     border-bottom: 1px solid #DEDEDE;
+	}
+.inner_clearfix{
+	width: 1190px;
+    height: 30px;
+    margin: 0 auto
+	}
+.f1{
+  float:left;	
+	}
+.fr{
+	float:right;
+	}
+.head_t .tools li {
+    border: 1px solid #F3F3F3;
+    border-bottom: none;
+    float: left;
+    display: inline;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+   }
+ .head_t .user li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    display: inline;
+    position: relative;
+    border-bottom: none;
+    z-index: 10;
+	margin-left:40px;
+  }
+  .f1 li a{
+	 color:#ecc30a;
+	 text-decoration:none;
+	  }
+  .fr li a{
+	  color:#333;
+	  text-decoration:none;
+	  }
+.head_m {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 24px 0;
+	}
+.head_m h1{
+	float:left
+	}
+.head_m .search{
+	margin-left:480px;
+	margin-top:-56px;
+	}
+.head_background{
+	width:100%;
+	background:#fff;
+	}
+.head-nav{
+	width:1190px;
+	margin:0 auto;
+	height:100px;
+	}
+.head_m {
+	float:left;
+	width:120px;
+	margin-left:-94px;
+	margin-top:-8px;
+	height:50px;
+	}
+.nav{
+    float:left;
+	margin-left:90px;
+	margin-top:45px;
+	}
+.nav ul .active a{
+	color:#ecc30a;
+	}
+.nav ul li{
+    display:inline-block;
+	font-size:16px;
+	padding-right:100px;
+	}
+.nav ul li a{
+	color:#000;
+	text-decoration:none;
+	}
+.nav ul li a:hover{
+	color:#ecc30a;
+	}
+.search{
+	float:right;
+	margin-top:40px;
+	position:relative;
+	}
+.search span{
+	position:absolute;
+	right:18px;
+	top:8px;
+	color:#333;
+	}
+
+.order_wrap{
+	background:#f6f6f6;
+	height:auto !important;
+	min-height:600px;
+	}
+.order_main{
+	 width:1190px;
+	 margin:0 auto;
+	 padding:28px 0 50px;
+	 }
+.order_step{
+	font-size:24px;
+	color:#ecc30a;
+	line-height:62px;
+	float:left;
+	margin-left:10px;
+	font-family: "Microsoft Yahei";
+	}
+.step1 h3 {
+    font-size: 24px;
+    color: #ecc30a;
+    line-height: 62px;
+    float: left;
+    margin-left: 10px;
+    font-family: "Microsoft Yahei";
+}
+.clearfix li{
+	display:inline-block;
+	}
+.o_box{
+	background: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding: 12px;
+	}
+.o_box.cart_tt{
+	font-weight:700;
+	background:#FFF;
+	line-height:24px;
+	}
+.o_box .cart_tt .goods{
+	width:400px;
+	float:left;
+	text-align:left;
+	padding-left:120px;
+	}
+.o_box .cart_tt .price{
+	width:150px;
+	text-align:right;
+	float:left;
+	font-family:verdana;
+	}
+.o_box .cart_tt .qty{
+	width:100px;
+	margin:0 100px;
+	float:left;
+	}
+.o_box .sum_price {
+    text-align: right;
+    float: left;
+    font-family: verdana;
+	margin-left:-50px;
+}
+.o_box .edit {
+    float: right;
+    width: 100px;
+}
+.cart_list {
+    border: 1px solid #e8e8e8;
+    margin-top: 10px;
+    margin-bottom:30px;
+	height:108px;
+}
+.cart_list li{
+	padding:10px 0;
+	list-style:none;
+	}
+.cart_list .channel {
+    width: 50px;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cart_list .goods {
+    width: 500px;
+    float: left;
+    text-align: left;
+    padding-left:14px;
+}
+.cart_list .cart_tbody .pic {
+    float: left;
+}
+.cart_list .cart_tbody .pic img {
+    border: 1px solid #e8e8e8;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.cart_list .cart_tbody .name {
+    float: left;
+    margin-left:70px;
+    line-height: 20px;
+    width: 420px;
+    text-align: left;
+	margin-top:-39px;
+	font-size:12px;
+}
+.cart_list .cart_tbody .name p a{
+	color:#919191;
+	}
+.cart_list .cart_tbody .property {
+    padding-top: 2px;
+    line-height: 18px;
+    color: #919191;
+	margin-top:-8px;
+}
+.cart_list .cart_tbody .property span {
+    float: left;
+    margin-right: 10px;
+    display: inline;
+}
+.clear {
+    clear: both;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0;
+    overflow: hidden;
+}
+.cart_list .cart_item .price, .cart_list .cart_item .edit {
+    line-height: 62px;
+}
+.cart_list .price {
+    width: 150px;
+    text-align: right;
+    float: left;
+    font-family: verdana;
+	margin-left:-154px;
+	margin-top:35px;
+}
+.cart_list .qty {
+    width: 100px;
+    margin: 11px 70px;
+    float: left;
+}
+.cart_list .widget {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+.increase {
+    float: left;
+    background:url(../img/shop/view_icos.png) no-repeat 0 -51px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.amount_input {
+    float: left;
+    background: #fff;
+    border: none;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    width: 47px;
+    height: 22px;
+    text-align: center;
+}
+.decrease {
+    float: left;
+    background:url(../img/shop/view_icos.png) no-repeat -24px -51px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.cart_list .cart_item .sum_price {
+    color: #ff5656;
+    font-weight: 700;
+    line-height: 62px;
+}
+.cart_list .sum_price {
+    text-align: right;
+    float: left;
+    font-family: verdana;
+	margin-left:15px;
+	margin-top:32px;
+	color:#ff5656;
+}
+i, em {
+    font-style: normal;
+}
+.cart_list .cart_item .price, .cart_list .cart_item .edit {
+    line-height: 62px;
+}
+.cart_list .edit {
+    float:right;
+	margin-top:31px;
+}
+.cart_list .edit a{
+	text-decoration:none;
+	color:#919191;
+	}
+.continue_shopping{
+	display: inline-block;
+    border: 1px solid #e8e8e8;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+	}
+.continue_shopping a{
+	color:#919191;
+	}
+.btn_buy{
+	display: inline-block;
+    width: 150px;
+    height: 40px;
+    color: #FFF;
+    background: #ecc30a;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    floay: right;
+    float: right;
+	}
+.btn_buy:hover{
+	color:#fff;
+	text-decoration:none;
+	}
+.total_message{
+	display:inline-block;
+	margin-left:565px;
+	margin-top:5px;
+	}
+.all_total{
+	font-weight:700;
+	font-family: '宋体',Arial,Tahoma;
+    color: #767676;
+	height: 28px;
+    display: inline-block;
+    line-height: 28px;
+	}
+.all_price{
+	    float: right;
+    color: #FF5656;
+    font-size: 20px;
+    font-family: verdana;
+    font-weight: 400;
+	}

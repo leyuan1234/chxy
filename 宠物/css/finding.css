@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.seek{
+	
+	width:500px;
+	height:530px;
+	margin:200px auto;
+	background:#fff;
+	border-radius:5px;
+	position:absolute;
+	box-shadow:5px 5px 5px #8b8f94;
+	z-index:1000;
+	left:714px;
+}
+.seek a{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	text-decoration:none;
+	color:#93999f;
+	position:absolute;
+	top:34px;
+	right:34px;
+	font-size:20px;
+}
+.seek a:hover{
+	color:#000;
+}
+.seek h1{
+	width:500px;
+	height:70px;
+	line-height:40px;
+	padding:20px;
+	border-bottom:1px solid #d9dde1;
+	font-family:'微软雅黑';
+	font-weight:normal;
+}
+.seek .seek-con{
+	width:424px;
+	height:409px;
+	margin:0px auto;
+	margin-top:25px;
+	position:absolute;
+	right:0px;
+	top:80px;
+}
+.seek .seek-con p{
+	width:400px;
+	height:30px;
+	line-height:30px;
+	margin-top:25px;
+}
+.seek .seek-con p span{
+	display:inline-block;
+	width:86px;
+	font-size:14px;
+	color:#07111b;
+	font-weight:bold;
+	text-align:right;
+	margin-right:10px;
+}
+.seek .seek-con p input{
+	width:260px;
+	height:35px;
+	padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #7F7F7F;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.seek .seek-con .special select{
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #7F7F7F;
+	height:36px;
+	width:90px;
+}
+.finished{
+	width:424px;
+	height:200px;
+	margin:0 auto;
+	margin-top:35px;
+}
+.finished .bt{
+	width:70px;
+	height:30px;
+	font-size:18px;
+	border-radius:10px;
+	border:1px solid #ccc;
+	background:hsla(205,72%,51%,0.8);
+	color:#fff;
+	float:right;
+	margin-right:30px;
+}
+
+.finished .ds{
+	margin-right:30px;
+}
+.show{
+	width:60px;
+	height:40px;
+	position:absolute;
+	top:400px;
+	right:0px;
+	
+}
+	
+	

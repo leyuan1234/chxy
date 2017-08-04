@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="css/public-welfare.css" rel="stylesheet">
+<link rel="stylesheet" href="css/finding.css">
+<link rel="stylesheet" href="iconfonts/iconfont.css">
+<link rel="stylesheet" href="css/information.css">
+<script src="jquery-1.4.2.min.js"></script>
+<style>
+.write{
+	position:absolute;
+	top:18px;
+	left:1180px;
+	}
+.write a{
+	color:#ecc30a;
+	}
+.write a span{
+	display:block;
+	width:20px;
+	height:20px;
+	}	
+.push_write_say{
+	display:none;
+	}
+.base{
+	position:absolute;
+	width:1920px;
+	height:2000px;
+	background:#ccc;
+	opacity:0.7;
+	top:0px;
+	left:0px;
+	z-index:1000;
+	}
+.write_say{
+	width:600px;
+	height:200px;
+	position:absolute;
+	z-index:1001;
+	background:#FFF;
+	left:700px;
+	top:350px;
+	border-top:2px solid #ecc30a;
+	}
+.write_say #btn_2{
+	position:absolute;
+	top:5px;
+	right:5px;
+	}
+.write_say p{
+	border-bottom:2px solid #eee;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	}
+.write_say .list{
+	margin-top:15px;
+	}
+.write_say a span{
+	padding-left:10px;
+	margin-top:15px;
+	}
+.write_say .list button{
+	position:absolute;
+	width:50px;
+	height:27px;
+	background:#F90;
+	left:530px;
+	}
+</style>
+</head>
+<body id="body">
+
+<div class="header">
+	<div class="container">
+		<div class="pet_icon">
+			<img src="img/logo1.png" />
+		</div>
+		<div class="header-sub">
+		 <ul>
+			 <li><a href="index.html">首页</a></li>
+			 <li><a href="pet-talk.html">pet说</a></li>
+			 <li><a href="public-welfare.html">公益</a></li>
+			 <li><a href="shop.html">宠物商城</a></li>
+			 <li class="active"><a href="information.html">宠物资讯</a></li>
+             <li><a href="personal.html">个人中心</a></li>
+		 </ul>
+			 <a href="login.html">
+				<span class="glyphicon glyphicon-user"> 登录</span>
+			 </a>
+               <!--写说说-->
+            <div class="write">
+             <a><span class="glyphicon glyphicon-edit write_icon"></span></a>
+             </div>
+		</div>
+	</div>
+</div>
+     <!--弹出发表框-->
+             <div class="push_write_say">
+              <div class="base"></div>
+              <div class="write_say">
+			    <span id="btn_2" class="glyphicon glyphicon-remove"></span>
+                <div><p>有什么新鲜事想告诉大家?</p></div>
+                <div><input type="text" style="width:572px; height:80px;margin-left:12px;margin-top:10px"/></div>
+                <div class="list">
+                <a><span><img src="img/personal/5.jpg"/></span></a>
+                <a><span><img src="img/personal/6.jpg"/></span></a>
+                <a><span><img src="img/personal/8.jpg"/></span></a>
+                <a><span><img src="img/personal/9.jpg"/></span></a>
+               <button class="sumbit">发表</button>
+               </div>
+            </div>
+           </div>
+		</div>
+
+<!--内容部分-->
+<div class="containers">
+  <div class="container_top">
+   <div class="container_top_left">
+   <!--轮播部分-->
+     <div class="slider">
+        <ul class="slider-main">
+        <li class="slider-panel">
+        <a href="#"><img src="img/information/l1.jpg"></a>
+        </li>
+        <li class="slider-panel">
+        <a href="#"><img src="img/information/l2.jpg"></a>
+        </li>
+        <li class="slider-panel">
+        <a href="#"><img src="img/information/l1.jpg"></a>
+        </li>
+        <li class="slider-panel">
+        <a href="#"><img src="img/information/l2.jpg"></a>
+        </li>
+        </ul>
+        <div class="slider-extra">
+        <div class="slider-page">
+        <a class="slider-pre" href="javascript:;;">&lt
+        </a>
+        <a class="slider-next" href="javascript:;;">></a>
+        </div>
+        </div>
+        </div>
+   </div>
+   <div class="container_top-right">
+     <ul>
+      <li><a><i id="one"></i><h4>宠物大全</h4><p>在这里我们用相知与它结缘</p></a></li>
+      <li><a><i id="two"></i><h4>宠物饲养</h4><p>在这里我们安全伴他成长</p></a></li>
+      <li><a><i id="three"></i><h4>宠物训练</h4><p>在这里我们用鼓励陪他同行</p></a></li>
+      <li><a><i id="four"></i><h4>宠物医疗</h4><p>在这里我们用呵护保他健康/p></a></li>
+     </ul>
+   </div>
+  </div>
+  <div class="container_middle">
+  <h3>热门宠物</h3>
+  <ul class="container_middle_top">
+  <li><a><img src="img/information/1.png"><p>金毛犬</p></a></li>
+  <li><a><img src="img/information/2.png"><p>哈士奇</p></a></li>
+  <li><a><img src="img/information/3.png"><p>比熊犬</p></a></li>
+  <li><a><img src="img/information/4.png"><p>博美犬</p></a></li>
+  <li><a><img src="img/information/5.png"><p>边境牧羊犬</p></a></li>
+  <li><a><img src="img/information/6.png"><p>贵宾犬</p></a></li>
+  </ul>
+  <ul class="container_middle_bottom">
+  <li><a><img src="img/information/7.png"><p>约克夏</p></a></li>
+  <li><a><img src="img/information/8.png"><p>异国短毛猫</p></a></li>
+  <li><a><img src="img/information/9.png"><p>波斯猫</p></a></li>
+  <li><a><img src="img/information/2.png"><p>哈士奇</p></a></li>
+  <li><a><img src="img/information/3.png"><p>比熊犬</p></a></li>
+  <li><a><img src="img/information/4.png"><p>贵宾犬</p></a></li>
+  </ul>
+  </div>
+  <div class="container_dog">
+  <h3>狗狗百科</h3>
+  <ul class="title">
+   <li><a>狗狗饲养</a></li>
+   <li><a>狗狗训练</a></li>
+   <li><a>狗狗医疗</a></li>
+  </ul>
+  <div class="container_list">
+  <ul>
+   <li class="list_one"><img src="img/information/1.jpg"/>
+   <span>犬体外寄生虫诱发出哪些疾病</span>
+   <P>为狗狗做好驱虫工作不只是为了防止某些寄生虫对我们的健康造成影响，更主要的是因为寄生虫对于狗狗的危害来的更大，而且寄生虫不...【详细】</P>
+   </li>
+   <li class="list_two">
+     <ul>
+       <li>
+        <img src="img/information/2.jpg"/>
+        <p>狗狗干咳怎么办要如何防治呢</p>
+       </li>
+       <li>
+        <img src="img/information/3.jpg"/>
+        <p>怎么给贵宾剪毛 需要注意什么</p>
+       </li>
+       <li>
+        <img src="img/information/4.jpg"/>
+        <p>贵宾犬怎么断尾 需要注意什么</p>
+       </li>
+       <li>
+        <img src="img/information/5.jpg"/>
+        <p>松狮犬怎么看纯不纯</p>
+       </li>
+     </ul>
+   </li>
+   <li class="list_two">
+   <ul>
+       <li>
+        <img src="img/information/2.jpg"/>
+        <p>狗狗伤口发炎怎么办 怎么治疗</p>
+       </li>
+       <li>
+        <img src="img/information/3.jpg"/>
+        <p>怎么给贵宾剃毛 需要注意什么</p>
+       </li>
+       <li>
+        <img src="img/information/4.jpg"/>
+        <p>拉布拉多不睡觉这怎么办</p>
+       </li>
+       <li>
+        <img src="img/information/5.jpg"/>
+        <p>松狮缺乏维C有哪些表现</p>
+       </li>
+     </ul>
+   </li>
+   <li class="list_three">
+     <ul>
+     <li>
+     <i></i>
+     <p><a>求助，两个月巴哥幼犬是不是病了</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>狗狗得了细小没有钱医院治病</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>狗狗不吃饭</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>肠胃病</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>狗狗一不听话，我就把它关笼子...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>狗见到陌生人吠叫是因为胆小吗</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>近一个月总吐黄水和一抽一抽的...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>刚接到家一天的泰迪狗狗吐黄水</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>呕吐</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>怎么给狗狗洗脸</a></p>
+     </li>
+     </ul>
+   
+   </li>
+  </ul>
+  </div>
+  </div>
+  <div class="container_dog">
+  <h3>猫猫百科</h3>
+  <ul class="title">
+   <li><a>猫咪饲养</a></li>
+   <li><a>猫咪训练</a></li>
+   <li><a>猫咪医疗</a></li>
+  </ul>
+  <div class="container_list">
+  <ul>
+   <li class="list_one"><img src="img/information/a1.jpg"/>
+   <span>几种常见的猫咪保定方法</span>
+   <P>在对于猫咪的饲养过程中，我们时常会遇到猫咪的各种各样的病状，在对这些病症做出诊断之前，我们需要对猫咪做一些一般的检查，比...【详细】</P>
+   </li>
+   <li class="list_two">
+     <ul>
+       <li>
+        <img src="img/information/b1.jpg"/>
+        <p>约克夏选购知识</p>
+       </li>
+       <li>
+        <img src="img/information/b2.jpg"/>
+        <p>猫外伤的紧急处理方法</p>
+       </li>
+       <li>
+        <img src="img/information/b3.jpg"/>
+        <p>买猫注意事项</p>
+       </li>
+       <li>
+        <img src="img/information/b4.jpg"/>
+        <p>清除猫咪跳蚤的方法</p>
+       </li>
+     </ul>
+   </li>
+   <li class="list_two">
+   <ul>
+       <li>
+        <img src="img/information/c1.jpg"/>
+        <p>泰迪犬能吃水果吗</p>
+       </li>
+       <li>
+        <img src="img/information/c2.jpg"/>
+        <p>搞定猫咪坏脾气</p>
+       </li>
+       <li>
+        <img src="img/information/c3.jpg"/>
+        <p>猫抓沙发太烦恼如何解决</p>
+       </li>
+       <li>
+        <img src="img/information/c4.jpg"/>
+        <p>猫咪品种鉴赏之喜马拉雅猫</p>
+       </li>
+     </ul>
+   </li>
+   <li class="list_three">
+     <ul>
+     <li>
+     <i></i>
+     <p><a>两个月奶猫呕吐，吐酸水</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>刚一个月大的小猫一天该吃多少...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>被自己家的猫抓伤了是否需要打...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>求助各位养猫的朋友，伟嘉妙鲜...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>老年猫体重及指甲等会出现哪些...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>求助，两个月巴哥幼犬是不是病了</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>咪咪拉肚子拉了近一个月了，一...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>定期修剪指甲对猫咪有什么好处</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>求助！家里的奶猫今天突然不吃...</a></p>
+     </li>
+     <li>
+     <i></i>
+     <p><a>猫咪缺水会得什么病？</a></p>
+     </li>
+     </ul>
+   
+   </li>
+  </ul>
+  </div>
+  </div>
+</div>
+<div class="question">
+<ul>
+<li><a><p>问答<br>专区</p></a></li>
+<li><a><p>宠物<br>助手</p></a></li>
+<li><a><img src="img/information/top.png"/></a></li>
+</ul>
+</div>
+<div class="help">
+
+</div>
+
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/pet_public.js"></script>
+<script>
+$('#seek').hide();
+$('#show').click(function(){
+	$('#seek').show();
+	$('#body').css("background","#a8abaf");
+	});
+</script>
+<script>
+$(function(){
+	$(".write_icon").click(function(){
+		$(".push_write_say").show();
+	})
+	$("#btn_2").click(function(){
+		$(".push_write_say").hide();
+	})
+})
+</script>
+<script src="js/information.js"></script>
+<script>
+jQuery.expr[':'].Contains = function(a, i, m) {
+    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+};
+
+function filterList(list) {
+    $('#js-groupId').bind('input propertychange', function() {
+        var filter = $(this).val();
+        if (filter) {
+            $matches = $(list).find('a:Contains(' + filter + ')').parent();
+            $('li', list).not($matches).slideUp();
+            $matches.slideDown();
+        } else {
+            $(list).find("li").slideDown();
+        }
+    });
+}
+$(function() {
+    filterList($("#groupid"));
+    $('#js-groupId').bind('focus', function() {
+        $('#groupid').slideDown();
+    }).bind('blur', function() {
+        $('#groupid').slideUp();
+    })
+    $('#groupid').on('click', 'li', function() {
+        $('#js-groupId').val($(this).text())
+        $('#groupId').val($(this).data('id'))
+        $('#groupid').slideUp()
+    });
+})
+</script>
+</body>
+</html>

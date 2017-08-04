@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding:0;
+	margin:0px;
+}
+.container{
+	width:1140px;
+	height:500px;
+	margin:0 auto;
+	clear:both;
+}
+.container h1{
+	text-align:center;
+	color:#ecc30a;
+	line-height:120px;
+}
+.container .recommend{
+	width:200px;
+	height:440px;
+	overflow:hidden;
+    position:relative;
+	float:left;
+}
+.container .recommend .recommend-img li{
+	list-style:none;
+	width:200px;
+	height:490px;
+	
+}
+.container .recommend .recommend-img li img{
+	width:200px;
+	height:490px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.container .recommend .num  li.active{
+	background:#AA0000;
+}
+.container .recommend .num {
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	font-size:0px;
+	text-align:center;
+	width:100%;
+}
+.container .recommend .num li {
+	width:20px;
+	height:20px;
+	background:#666666;
+	color:#FFFFFF;
+	text-align:center;
+	line-height:20px;
+	display:inline-block;
+	font-size:16px;
+	border-radius:50%;
+	margin-right:10px;
+	cursor:pointer;
+}
+.container .book{
+	float:left;
+	width:900px;
+	height:490px;
+	margin-left:10px;
+}
+.container .book .book-img li{
+	list-style:none;
+	width:178px;
+	height:200px;
+	text-align:center;
+	float:left;
+	margin-bottom:40px;
+	border:1px solid #fff;
+	position:relative;
+}
+.container .book .book-img li .shows{
+	width:178px;
+	height:60px;
+	font-size:14px;
+	background:#000;
+	opacity:0.6;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	color:#fff;
+	cursor:pointer;
+	display:none;
+}
+.container .book .book-img li .shows p{
+	padding:5px;
+}
+.container .book .book-img li .shows .look{
+	display:block;
+	width:70px;
+	height:20px;
+	position:absolute;
+	right:20px;
+	bottom:10px;
+	border:1px solid #CF7221;
+	border-radius:5px;
+	color:#CF7221;
+}
+
+.container .book .book-img li:hover{
+	border-color:#CF7221;
+}
+.container .book .book-img li:hover .shows{
+	display:block;
+}
+	
+.container .book .book-img li img{
+	width:138px;
+	height:140px;
+}
+.container .book .book-img li p{
+	font-size:12px;
+	color:#aaa;
+}
+.container .book .book-img li .author{
+	padding:8px;
+}

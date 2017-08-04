@@ -1,0 +1,231 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.search-pet a{
+	display:block;
+	width:50px;
+	height:150px;
+	position:fixed;
+	top:380px;
+	right:0;
+	background:#ecc30a;
+	color:#FFF;
+	border-radius:5px;
+	text-align:center;
+	text-decoration:none;
+	padding-top:20px;
+	}
+.search-pet a p{
+	font-size:20px;
+	}	
+
+.header{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	margin:0 auto;
+	position:relative;
+	background:#333;
+	position:relative;
+	font-size:14px;
+}
+.header ul{
+	position:absolute;
+	right:368px;
+	top:0px;
+}
+.header ul li{
+	list-style:none;
+	float:left;
+	margin-right:30px;
+	
+}
+.header ul li a{
+	color:#ecc30a;
+	text-decoration:none;
+	}
+.header ul .active a{
+	color:#FFF;
+	}
+
+.mark {
+	width:1120px;
+    background:#FFC;
+	height:200px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	}
+.mark a{color:#000;text-decoration:none;}
+.mark h3{
+	padding-top:50px;
+	line-height:60px;
+	}
+.mark span {
+	color:#F00;
+	}
+.mark a .Two-microcode{
+	position:absolute;
+	left:1115px;
+	top:0px;
+	display:none;
+	}
+.mark a:hover .Two-microcode{
+	display:block;
+	}
+.collected{
+	width:1120px;
+	margin:0 auto;
+}
+.collected .collected-left{
+	width:1120px;
+	height:300px;
+	border-bottom:1px solid #ddd;
+	margin-bottom:40px;
+}
+.collected .collected-left h2{
+	text-align:left;
+	padding:20px 0;
+	font-family:'微软雅黑';
+	font-weight:normal;
+}
+.collected .collected-left .collected-con .ff{
+	width:460px;
+	height:50px;
+	font-size:14px;
+	line-height:50px;
+	margin-bottom:12px;
+	font-family:'微软雅黑';
+	float:left!important;
+}
+.collected .collected-left .collected-con .ff span{
+	display:inline-block;
+	width:80px;
+	
+}
+.collected .collected-left .collected-con .ff input{
+	width:260px;
+	height:28px;
+	padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #7F7F7F;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  
+}
+.collected .collected-left .collected-con .ff select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #7F7F7F;
+	height:36px;
+	width:180px;
+}
+
+.collected .collected-right{
+	width:1120px;
+	height:490px;
+	border-bottom:1px solid #ddd;
+}
+.collected .collected-right h2{
+	text-align:left;
+	padding:20px 0;
+	font-family:'微软雅黑';
+	font-weight:normal;
+}
+.collected .collected-right .collected-right-con .rr{
+	width:1120px;
+	height:50px;
+	font-size:14px;
+	line-height:50px;
+	margin-bottom:12px;
+	font-family:'微软雅黑';
+}
+.collected .collected-right .collected-right-con .rr span{
+	display:inline-block;
+	width:80px;
+	
+}
+.collected .collected-right .collected-right-con .rr input{
+	width:260px;
+	height:28px;
+	padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #7F7F7F;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  
+}
+.collected .collected-right .collected-right-con .special input{
+	margin-right:8px;
+}
+.collected .collected-right .collected-right-con .rr select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #7F7F7F;
+	height:36px;
+	width:180px;
+	margin-right:8px;
+}
+.collected .collected-right .collected-right-con .rr .small{
+	width:120px;
+}
+.last{
+	width:1120px;
+	height:400px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.last h2{
+	text-align:left;
+	padding:20px 0;
+	font-family:'微软雅黑';
+	font-weight:normal;
+}
+.last .content{
+	width:1120px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+.last .content p{
+	color:#7F7F7F;
+	padding:20px;
+}
+.last .content textarea{
+	width:1118px;
+	height:239px;
+	border:1px solid #fff;
+}
+.finished{
+	width:1120px;
+	height:200px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.finished .bt{
+	width:80px;
+	height:40px;
+	font-size:18px;
+	border-radius:10px;
+	border:1px solid #ccc;
+	background:hsl(42, 72%, 51%);
+	color:#fff;
+}
+.finished .ds{
+	margin-left:30px;
+}
+	
