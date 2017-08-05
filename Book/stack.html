@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stack.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--网页最上面的横条-->
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="register.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="#">注销&nbsp;<sapn class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!--中间的logn 搜索框 以及图标位置 部分-->
+  	<div id="logn" class="container">
+  		<div class="logo">
+  			<h1>For-Knowledge</h1>
+  			<div class="input-group search">
+  				<input type="text" class="" placeholder="请输入搜索的内容"><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+  			</div>
+  			<div class="search_bottom">
+  				<span>热搜：<a href="#" class="">四大名著</a>|<a href="#" class="">金典书城</a>|<a href="#" class="">国外名著</a>|<a href="#" class="">小说</a></span>
+  			</div>
+  		</div>
+  		<div class="logo_logo">
+  			<img src="img/logo.png" />
+  		</div>
+  	</div>
+  	
+  	<nav id="nav_main" >
+  		<div class="container">
+	  		<ul class="hp_ul">
+	  			<li><a href="home_page.html"><!--<span class="glyphicon glyphicon-home"></span>&nbsp;-->首页</a></li><li class="active">
+	  				<a href="stack.html"><span class="glyphicon glyphicon-th-list"></span>&nbsp;书库</a></li><li >
+	  				<a href="wish_list.html"><!--<span class="glyphicon glyphicon-list-alt"></span>&nbsp;-->心愿单</a></li><li>
+	  				<a href="sell_book.html"><!--<span class="glyphicon glyphicon-log-in"></span>&nbsp;-->卖书</a></li><li >
+	  				<a href="bookcase.html"><!--<span class="glyphicon glyphicon-tasks"></span>&nbsp;-->书架</a></li><li >
+	  				<a href="client.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->客户端</a></li><li >
+	  				<a href="community.html"><!--<span class="glyphicon glyphicon-comment"></span>&nbsp;-->社区</a></li>
+	  		</ul>
+  		</div>
+  	</nav>
+  	
+  	<!--书籍的分类-->
+  	<div id="screen" class="container">
+  		<div class="screen">
+  			<span>书籍语言</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>中文</li>
+  				<li>英语</li>
+  				<li>日语</li>
+  				<li>韩语</li>
+  				<li>德文</li>
+  				<li>其他</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>书籍种类</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>考研</li>
+  				<li>学习</li>
+  				<li>小说</li>
+  				<li>科普</li>
+  				<li>法律</li>
+  				<li>经济</li>
+  				<li>哲学</li>
+  				<li>历史</li>
+  				<li>休闲</li>
+  				<li>其他</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>书籍新旧</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>九成新</li>
+  				<li>七成新</li>
+  				<li>五成新</li>
+  				<li>三成新</li>
+  				<li>一层新</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>发布时间</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>今日</li>
+  				<li>三日内</li>
+  				<li>一个星期</li>
+  				<li>半个月</li>
+  				<li>一个月</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>书籍价格</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>低于10元</li>
+  				<li>10元到30元</li>
+  				<li>30元到50元</li>
+  				<li>50元到100元</li>
+  				<li>高于100元</li>
+  			</ul>
+  		</div>
+  	</div>
+  	
+  	<!--主体销售-->
+  	<div id="book_sell" class="container">
+  				<div id="to_shopping">
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_15.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">承担</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="button" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							曾子曰：“可以托六尺之孤，可以寄百里之命，临大节而不可夺也。君子人与？君子人也。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+		  							<img src="img/book_31.jpg" />
+		  						</a>
+		  					</div>
+		  					<span class="hidden_span">三个火枪手</span>
+		  					<p class="money">￥55.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							三个火枪手阿多斯、波尔朵斯、阿拉宓斯如何忠于国王，与黎塞留斗争
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_22.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">孝经</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							“夫孝，天之经也，地之义也，人之行也。”指出孝是诸德之本
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  						<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_05.jpg" />
+		  					</a>
+		  				</div>
+	  					<span class="hidden_span">黑白布局</span>
+	  					<p class="money">￥49.9</p>
+	  					<div class="btn_find">
+								<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+							</div>
+	  					<span class="info_book_right">
+	  						<a href="details.html">
+	  							黑白布局叙述的是我国家安全机关一个反间谍秘密小组与潜伏间谍组织SN之间的较量故事。
+	  						</a>
+	  					</span>
+	  				</div>
+	  				<div class="right_books">
+	  					<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_03.jpg" />
+		  					</a>
+		  				</div>
+	  					<span class="hidden_span">希腊文化史</span>
+	  					<p class="money">￥68.8</p>
+	  					<div class="btn_find">
+								<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+							</div>
+	  					<span class="info_book_right">
+	  						<a href="details.html">
+	  							欧洲最早的文明——希腊文明，约在4500年前出现于克里特岛。
+	  						</a>
+	  					</span>
+	  				</div>
+	  				<div class="right_books">
+	  					<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_06.jpg" />
+		  					</a>
+		  					</div>
+	  					<span class="hidden_span">唐宋八大家文抄</span>
+	  					<p class="money">￥50</p>
+	  					<div class="btn_find">
+								<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+							</div>
+	  					<span class="info_book_right">
+	  						<a href="details.html">
+	  							《唐宋八大家文钞》，是唐宋古文运动的产物。唐宋古文运动，是唐宋时期的文学革新运动。
+	  						</a>
+	  					</span>
+	  				</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_01.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">远大前程</span>
+		  					<p class="money">￥58.8</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							属于查尔斯·狄更斯的晚期作品，它写于狄更斯生活中出现危机之后。他刚与妻子凯瑟琳分手，这给他带来了巨大的痛苦。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_02.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">论语</span>
+		  					<p class="money">￥45.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							主要记录孔子及其弟子的言行，较为集中地反映了孔子的思想，是儒家学派的经典著作之一。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_07.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">镜花缘</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="#">
+		  							该书前半部分描写了唐敖、多九公等人乘船在海外游历的故事，包括他们在女儿国、君子国、无肠国等国的经历史。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_04.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">三国演义</span>
+		  					<p class="money">￥68.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							从东汉末年到西晋初年之间近105年的历史风云，以描写战争为主，
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_11.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">水浒传</span>
+		  					<p class="money">￥68.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							深刻揭示了起义的社会根源，满腔热情地歌颂了起义英雄的反抗斗争和他们的社会理想，
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_09.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">红楼梦</span>
+		  					<p class="money">￥68.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							具有世界影响力的人情小说作品 ，举世公认的中国古典小说巅峰之作，
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_10.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">洛尔迦的诗</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							我国现代著名诗人戴望舒生前所译洛尔迦的诗作及著名西班牙文翻译家陈实补译的洛尔迦的几乎全部诗作
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_12.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">老子</span>
+		  					<p class="money">￥42.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							老子静思好学，知识渊博。老子总是寻根问底，对知识非常的渴望。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_13.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">中国史书名著</span>
+		  					<p class="money">￥38.8</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							在中国文学史上具有一定文学价值、脍炙人口的经典文学作品，
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_14.jpg" />
+		  					</a>
+		  					</div>
+		  					<span class="hidden_span">马丁·伊登</span>
+		  					<p class="money">￥46.5</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							讲述了青年水手马丁·伊登偶然结识了上流社会的罗丝小姐
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_16.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">复活</span>
+		  					<p class="money">￥49.9</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							男主人公聂赫留朵夫引诱姑妈家女仆玛丝洛娃，使她怀孕
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_23.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">变色龙</span>
+		  					<p class="money">￥43.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							契诃夫在该作中栩栩如生地塑造了虚伪逢迎、见风使舵的巡警
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_10.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">洛尔迦的诗</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							我国现代著名诗人戴望舒生前所译洛尔迦的诗作及著名西班牙文翻译
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="page_index ">
+  							<ul id="ul_icon">
+									<li class="active"><a href="#">1</a></li><li>
+										<a href="#">2</a></li><li>
+										<a href="#">3</a></li><li>
+										<a href="#">4</a></li><li>
+										<a href="#">5</a></li><li>
+										<a href="#">6</a></li><li>
+										<a href="#">7</a></li><li>
+										<a href="#">8</a></li>
+  							</ul>
+  							<button id="stack_ul_btn" >下一页</button>
+  						</div>
+  				</div>
+  	</div>
+  	<footer class="tail">
+  		
+  	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

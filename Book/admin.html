@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="admin_header">
+  		<h1>For-Knowledge校园二手书管理页面</h1>
+  		<div class="admin_person">
+  			<p>管理员：<span>小明</span></p>
+  		</div>
+  	</div>
+  	<div class="container">
+  		<div id="admin_left">
+				<ul class="admin_ul">
+					<span>首页内容</span>
+					<li id="admin_1" class="admin_select">图片</li>
+					<li id="admin_2">图书</li>
+					<span>图书管理</span>
+					<li id="admin_3">查看图书</li>
+					<li id="admin_4">添加图书</li>
+  				<span>分类管理</span>
+					<li id="admin_5">查看分类</li>
+  				<span>心愿单管理</span>
+					<li id="admin_6">查看心愿单</li>
+  				<span>书籍下架</span>
+					<li id="admin_7">书籍下架</li>
+				</ul>
+  		</div>
+  		<div id="admin_right">
+  			<!--网站图片更换-->
+  			<div class="admin_1">
+  				
+  				<div class="admin_1_imgs">
+	  				<h3>轮播图</h3>
+	  				<div class="admin_1_img">
+	  					<img src="img/book_1.jpg" />
+	  					<form action="input_from" enctype="multipart/form-data" name="input_from"><input 
+		  					type="file" name="input_file" id="input_file" style="display: none;" onchange="document.input_from.input_text.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from.input_file.click()"/><input 
+		  					type="text" name="input_text" class="admin_text" placeholder="600×377"/><br>
+					　　　　	<input type="submit" id="admin_btn" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_img">
+	  					<img src="img/book_2.jpg" />
+	  					<form action="input_from_1" enctype="multipart/form-data" name="input_from_1"><input 
+		  					type="file" name="input_file_1" id="input_file_1" style="display: none;" onchange="document.input_from_1.input_text_1.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_1.input_file_1.click()"/><input 
+		  					type="text" name="input_text_1" class="admin_text" placeholder="600×377"/><br>
+					　　　　	<input type="submit" id="admin_btn_1" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_img">
+	  					<img src="img/book_3.jpg" />
+	  					<form action="input_from_2" enctype="multipart/form-data" name="input_from_2"><input 
+		  					type="file" name="input_file_2" id="input_file_2" style="display: none;" onchange="document.input_from_2.input_text_2.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_2.input_file_2.click()"/><input 
+		  					type="text" name="input_text_2" class="admin_text" placeholder="600×377"/><br>
+					　　　　	<input type="submit" id="admin_btn_2" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_img">
+	  					<img src="img/book_4.jpg" />
+	  					<form action="input_from_3" enctype="multipart/form-data" name="input_from_3"><input 
+		  					type="file" name="input_file_3" id="input_file_3" style="display: none;" onchange="document.input_from_3.input_text_3.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_3.input_file_3.click()"/><input 
+		  					type="text" name="input_text_3" class="admin_text" placeholder="600×377"/><br>
+					　　　　	<input type="submit" id="admin_btn_3" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_img">
+	  					<img src="img/book_5.jpg" />
+	  					<form action="input_from_4" enctype="multipart/form-data" name="input_from_4"><input 
+		  					type="file" name="input_file_4" id="input_file_4" style="display: none;" onchange="document.input_from_4.input_text_4.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_4.input_file_4.click()"/><input 
+		  					type="text" name="input_text_4" class="admin_text" placeholder="600×377"/><br>
+					　　　　	<input type="submit" id="admin_btn_4" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  			</div>
+	  			
+
+					<div class="admin_1_photos">
+	  				<h3>big_photo图片</h3>
+	  				<div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_1.jpg" />
+		  					<form action="input_from_5" enctype="multipart/form-data" name="input_from_5"><input 
+			  					type="file" name="input_file_5" id="input_file" style="display: none;" onchange="document.input_from_5.input_text_5.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_5.input_file_5.click()"/><input 
+			  					type="text" name="input_text_5" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_5" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_2.jpg" />
+		  					<form action="input_from_6" enctype="multipart/form-data" name="input_from_6"><input 
+			  					type="file" name="input_file_6" id="input_file" style="display: none;" onchange="document.input_from_6.input_text_6.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_6.input_file_6.click()"/><input 
+			  					type="text" name="input_text_6" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_6" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_3.jpg" />
+		  					<form action="input_from_7" enctype="multipart/form-data" name="input_from_7"><input 
+			  					type="file" name="input_file_7" id="input_file" style="display: none;" onchange="document.input_from_7.input_text_7.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_7.input_file_7.click()"/><input 
+			  					type="text" name="input_text_7" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_7" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_4.jpg" />
+		  					<form action="input_from_8" enctype="multipart/form-data" name="input_from_8"><input 
+			  					type="file" name="input_file_8" id="input_file" style="display: none;" onchange="document.input_from_8.input_text_8.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_8.input_file_8.click()"/><input 
+			  					type="text" name="input_text_8" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_8" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_5.jpg" />
+		  					<form action="input_from_9" enctype="multipart/form-data" name="input_from_9"><input 
+			  					type="file" name="input_file_9" id="input_file" style="display: none;" onchange="document.input_from_9.input_text_9.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_9.input_file_9.click()"/><input 
+			  					type="text" name="input_text_9" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_9" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_6.jpg" />
+		  					<form action="input_from_10" enctype="multipart/form-data" name="input_from_10"><input 
+			  					type="file" name="input_file_10" id="input_file" style="display: none;" onchange="document.input_from_10.input_text_10.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_10.input_file_10.click()"/><input 
+			  					type="text" name="input_text_10" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_10" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_7.jpg" />
+		  					<form action="input_from_11" enctype="multipart/form-data" name="input_from_11"><input 
+			  					type="file" name="input_file_11" id="input_file" style="display: none;" onchange="document.input_from_11.input_text_11.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_11.input_file_11.click()"/><input 
+			  					type="text" name="input_text_11" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_11" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_8.jpg" />
+		  					<form action="input_from_12" enctype="multipart/form-data" name="input_from_12"><input 
+			  					type="file" name="input_file_12" id="input_file" style="display: none;" onchange="document.input_from_12.input_text_12.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_12.input_file_12.click()"/><input 
+			  					type="text" name="input_text_12" class="admin_text" placeholder="470×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_12" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_9.jpg" />
+		  					<form action="input_from_13" enctype="multipart/form-data" name="input_from_13"><input 
+			  					type="file" name="input_file_13" id="input_file" style="display: none;" onchange="document.input_from_13.input_text_13.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_13.input_file_13.click()"/><input 
+			  					type="text" name="input_text_13" class="admin_text" placeholder="940×200"/><br>
+						　　　　	<input type="submit" id="admin_btn_13" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  				<div class="admin_1_photo">
+		  					<img src="img/img_10.jpg" />
+		  					<form action="input_from_14" enctype="multipart/form-data" name="input_from_14"><input 
+			  					type="file" name="input_file_14" id="input_file" style="display: none;" onchange="document.input_from_14.input_text_14.value=this.value"/><input 
+			  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_14.input_file_14.click()"/><input 
+			  					type="text" name="input_text_14" class="admin_text" placeholder="470×400"/><br>
+						　　　　	<input type="submit" id="admin_btn_14" class="admin_sub btn btn-default" value="更换"/>
+							</form>
+		  				</div>
+		  			</div>
+  				<div>
+  			</div>
+  		</div>
+  			
+  			
+  				<div class="admin_1_big_imgs">
+	  				<h3>杂图</h3>
+	  				<div class="admin_1_big_img">
+	  					<img src="img/book_6.jpg" />
+	  					<form action="input_from_15" enctype="multipart/form-data" name="input_from_15"><input 
+		  					type="file" name="input_file" id="input_file" style="display: none;" onchange="document.input_from_15.input_text_15.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_15.input_file_15.click()"/><input 
+		  					type="text" name="input_text_15" class="admin_text" placeholder="259×125"/><br>
+					　　　　	<input type="submit" id="admin_btn_15" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_big_img">
+	  					<img src="img/big_img_2.jpg" />
+	  					<form action="input_from_16" enctype="multipart/form-data" name="input_from_16"><input 
+		  					type="file" name="input_file_16" id="input_file_16" style="display: none;" onchange="document.input_from_16.input_text_16.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_16.input_file_16.click()"/><input 
+		  					type="text" name="input_text_16" class="admin_text" placeholder="1170×200"/><br>
+					　　　　	<input type="submit" id="admin_btn_1" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_big_img">
+	  					<img src="img/list_1.jpg" />
+	  					<form action="input_from_17" enctype="multipart/form-data" name="input_from_17"><input 
+		  					type="file" name="input_file_17" id="input_file_17" style="display: none;" onchange="document.input_from_17.input_text_17.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_17.input_file_17.click()"/><input 
+		  					type="text" name="input_text_17" class="admin_text" placeholder="1170×170"/><br>
+					　　　　	<input type="submit" id="admin_btn_17" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_big_img">
+	  					<img src="img/com_1.jpg" />
+	  					<form action="input_from_18" enctype="multipart/form-data" name="input_from_18"><input 
+		  					type="file" name="input_file_18" id="input_file_18" style="display: none;" onchange="document.input_from_18.input_text_18.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_18.input_file_18.click()"/><input 
+		  					type="text" name="input_text_18" class="admin_text" placeholder="1170×150"/><br>
+					　　　　	<input type="submit" id="admin_btn_18" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  				<div class="admin_1_big_img">
+	  					<img src="img/reg_1.jpg" />
+	  					<form action="input_from_19" enctype="multipart/form-data" name="input_from_19"><input 
+		  					type="file" name="input_file_19" id="input_file_4" style="display: none;" onchange="document.input_from_19.input_text_19.value=this.value"/><input 
+		  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from_19.input_file_19.click()"/><input 
+		  					type="text" name="input_text_19" class="admin_text" placeholder="1170×476"/><br>
+					　　　　	<input type="submit" id="admin_btn_19" class="admin_sub btn btn-default" value="更换"/>
+						</form>
+	  				</div>
+	  			</div>
+  			
+  			</div>
+  			
+  			<!--首页书籍-->
+				<div class="admin_2">
+  				<h3>图书列表</h3>
+  				<input type="text" class="admin_input_text" placeholder="搜索内容，回车键搜索" />
+  				<button id="admin_2_btn" class=" btn btn-default" data-html="true" data-placement="bottom" data-triggle="tooltip" title="可以删除和增加">编辑</button>
+  				<ul>
+  					<li><span>男生精选</span></li>
+  					<li><abbr title="黑白布局">黑白布局</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="承担">承担</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="镜花缘">镜花缘</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="远大前程">远大前程</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>女生精选</span></li>
+  					<li><abbr title="孝经">孝经</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="诗经">诗经</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="马丁·伊登">马丁·伊登</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="白话聊斋">白话聊斋</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="搜神记">搜神记</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>国学</span></li>
+  					<li><abbr title="东坡易传">东坡易传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="史记">史记</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="资治通鉴">资治通鉴</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="周易">周易</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="三十六计">三十六计</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>外国文学</span></li>
+  					<li><abbr title="小王子">小王子</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="我的大学">我的大学</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="在人间">在人间</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="童年">童年</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="钢铁是怎样炼成的">钢铁是怎...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>前沿著作</span></li>
+  					<li><abbr title="Java面试题">Java面...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="Bootstrap实战">Bootstrap..</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="javaScript DOM的编程艺术">javaScript...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="物联网与现代物流">物联网与...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="第一行代码">第一行代...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>人生感悟</span></li>
+  					<li><abbr title="解忧杂货店">解忧杂货..</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="从你的全世界路过">从你的全...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="追风筝的人">追风筝的...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="看见">看见</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="悍刀雪中行">悍刀雪中...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>数学</span></li>
+  					<li><abbr title="概率论">概率论</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="离散数学">离散数学</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="高等数学">高等数学</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="高等数学（上）">高等数学...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="高等数学（下）">高等数学...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>英语</span></li>
+  					<li><abbr title="新概念">新概念</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="大学英语">大学英语</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="英语写作">英语写作</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="英语阅读和听力">英语阅读...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="英语专项训练">英语专项...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>政治</span></li>
+  					<li><abbr title="马克思主义">马克思主...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="毛泽东思想">毛泽东思...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="邓小平理论">邓小平理...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="科技是第一生产力">科技是第...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="政治考题汇总">政治考题...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>专业课</span></li>
+  					<li><abbr title="数学类">数学类</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="文学类">文学类</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="计算机类">计算机类</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="金融类">金融类</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="英语类">英语类</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>强力推荐</span></li>
+  					<li><abbr title="三生三世，十里桃花">三生三世...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="斗破苍穹">斗破苍穹</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="高数详解">高数详解</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="各种答案汇总">各种答案...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="期末不挂科宝典">期末不挂...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					
+  				</ul>
+  				<ul>
+  					<li><span>  </span></li>
+  					<li><abbr title="海上生明月">海上生明..</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="我爱我家">我爱我家</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="画江湖之不良人">画江湖之...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="梦想X生活">梦想X生...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="秦时明月之君临天下">秦时明月...</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>经典书库</span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span>考研专题</span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  				</ul>
+  				<ul>
+  					<li><span></span></li>
+  					<li><abbr title="水浒传">水浒传</abbr><span class="admin_2_mod glyphicon glyphicon-pencil"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  					<li><span class="admin_2_mod glyphicon glyphicon-plus"></span></li>
+  				</ul>
+  			</div>
+  			
+  			<!--全部图书-->
+  			<div class="admin_3">
+  				<h3>图书列表</h3>
+  				<input type="text" class="admin_input_text" placeholder="搜索内容，回车键搜索" />
+  				<table border="1" cellspacing="" cellpadding="">
+  					<tr>
+  						<th>书籍照片</th>
+  						<th>书籍名称</th>
+  						<th>上传时间</th>
+  						<th>书籍价格</th>
+  						<th>拥有者</th>
+  						<th>联系方式</th>
+  					</tr>
+  					<tr>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_3_icon glyphicon glyphicon-trash"></span></td>
+  						<td>水浒传</td>
+  						<td>2017.04.01</td>
+  						<td>23.0</td>
+  						<td>战术大师</td>
+  						<td>13625638736</td>
+  					</tr>
+  					<tr>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_06.jpg"></abbr><span class="admin_3_icon glyphicon glyphicon-trash"></span></td>
+  						<td>水浒传</td>
+  						<td>2017.04.01</td>
+  						<td>23.0</td>
+  						<td>战术大师</td>
+  						<td>13625638736</td>
+  					</tr>
+  					<tr>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_07.jpg"></abbr><span class="admin_3_icon glyphicon glyphicon-trash"></span></td>
+  						<td>水浒传</td>
+  						<td>2017.04.01</td>
+  						<td>23.0</td>
+  						<td>战术大师</td>
+  						<td>13625638736</td>
+  					</tr>
+  					<tr>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_08.jpg"></abbr><span class="admin_3_icon glyphicon glyphicon-trash"></span></td>
+  						<td>水浒传</td>
+  						<td>2017.04.01</td>
+  						<td>23.0</td>
+  						<td>战术大师</td>
+  						<td>13625638736</td>
+  					</tr>
+  					<tr>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_09.jpg"></abbr><span class="admin_3_icon glyphicon glyphicon-trash"></span></td>
+  						<td>水浒传</td>
+  						<td>2017.04.01</td>
+  						<td>23.0</td>
+  						<td>战术大师</td>
+  						<td>13625638736</td>
+  					</tr>
+  				</table>
+  			</div>
+  			
+  			
+  			<!--	添加图书-->
+  			<div class="admin_4">
+	  				<h3><span class="glyphicon glyphicon-book"></span>书籍信息</h3>
+	  				<form action="input_file" enctype="multipart/form-data" name="input_file">
+	  					<table>
+		  					<tr>
+		  						<td><label for="book_name">书籍名称</label></td>
+		  						<td><input type="text" id="book_name" class="required" placeholder="请输入书籍的全名"/></td>
+		  					</tr>
+		  					<tr>
+		  						<td class="admin_4_info">
+		  							<label for="info">书籍主旨</label>
+		  						</td>
+		  						<td>
+		  							<textarea id="info" name="info" class="required" placeholder="在20字以内作为书籍的主标题，把握重点，让书友有购买欲" rows="" cols=""></textarea>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td class="admin_4_info">
+		  							<label for="info_2">书籍简介</label>
+		  						</td>
+		  						<td>
+		  							<textarea id="info_2" name="info" class="required" placeholder="可以适当增加一点你对这本书的理解，在50字以内" rows="" cols=""></textarea>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td><label for="book_author">作者/类型</label></td>
+		  						<td><input type="text" id="book_author" class="required" placeholder="请输入书籍的作者和类型"/></td>
+		  					</tr>
+		  					<tr>
+		  						<td class="admin_4_info">
+		  							<label for="book_pho">书籍照片</label></td>
+		  						<td>
+		  							<div class="admin_4_book_img" id="book_pho"></div>
+			  							<form  action="input_file" enctype="multipart/form-data" name="input_file">
+			  								<input id="fileId1" type="file" accept="image/png,image/gif" name="fileId1" style="display: none;" onchange="document.input_file.fild_text.value=this.value"/>
+			  								<input type="button" name="fild_btn" id="fild_btn" value="选择图片" class="btn btn-default" onclick="document.input_file.fileId1.click()" />
+			  								<input type="text" name="fild_text" id="fild_text" />
+			  									<input type="submit" id="sk_sub" class="btn btn-default" value="上传"/>
+			  							
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td><label for="book_cash">报价</label></td>
+		  						<td><input type="text" id="book_cash" class="required" placeholder="合理报价"/></td>
+		  					</tr>
+		  					<tr>
+		  						<td><label>书籍语言</label></td>
+		  						<td>
+		  							<select>
+										  	<option value="type">中文</option>
+										  	<option value="type">英语</option>
+										  	<option value="type">日语</option>
+										  	<option value="type">韩语</option>
+										  	<option value="type">其他</option>
+											</select>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td><label>书籍种类</label></td>
+		  						<td>
+		  							<select>
+										  	<option value="type">考研</option>
+										  	<option value="type">学习</option>
+										  	<option value="type">小说</option>
+										  	<option value="type">科普</option>
+										  	<option value="type">法律</option>
+										  	<option value="type">经济</option>
+										  	<option value="type">哲学</option>
+										  	<option value="type">历史</option>
+										  	<option value="type">休闲</option>
+										  	<option value="type">其他</option>
+											</select>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td><label for="book_new">书籍新旧</label></td>
+		  						<td>
+		  							<select>
+		  									<option value="type">三成新</option>
+										  	<option value="type">五成新</option>
+										  	<option value="type">七成新</option>
+										  	<option value="type">九成新</option>
+											</select>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td class="admin_4_info">
+		  							<label for="address">附加</label>
+		  						</td>
+		  						<td><textarea id="info_addr" class="required" name="info" placeholder="对于这次交易你的补充说明" rows="" cols=""></textarea></td>
+		  					</tr>
+	  					</table>
+	  				</form>
+	  				<button type="submit" id="admin_4_btn" class="btn btn-default">提交</button>
+  			</div>
+  			
+  			<!--分类-->
+  			<div class="admin_5">
+  				<h3>分类列表</h3>
+  				<form>
+  					<table border="1">
+  						<tr>
+  							<th>分类名称</th>
+  							<th>小分类</th>
+  							<th>操作</th>
+  						</tr>
+  						<tr>
+  							<td rowspan="6">书籍语言<abbr title="添加分类"><span class="admin_5_icon glyphicon glyphicon-plus"></span></abbr></td>
+  							<td>中文</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>英语</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>日语</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>韩语</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>德文</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>其他</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td rowspan="10">书籍种类<abbr title="添加分类"><span class="admin_5_icon glyphicon glyphicon-plus"></span></abbr></td>
+  							<td>考研</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>学习</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>小说</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>科普</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>法律</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>经济</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>哲学</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							
+  							<td>历史</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>休闲</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>其他</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td rowspan="5">书籍新旧<abbr title="添加分类"><span class="admin_5_icon glyphicon glyphicon-plus"></span></abbr></td>
+  							<td>九层新</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>七成新</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>五成新</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>三成新</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>一层新</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td rowspan="5">发布时间<abbr title="添加分类"><span class="admin_5_icon glyphicon glyphicon-plus"></span></abbr></td>
+  							<td>今日</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>三日内</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>一个星期</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>半个月</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>一个月</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td rowspan="5">书籍价格<abbr title="添加分类"><span class="admin_5_icon glyphicon glyphicon-plus"></span></abbr></td>
+  							<td>低于10元</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>10元到30元</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>30元到50元</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>50元到100元</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						<tr>
+  							<td>高于100元</td>
+  							<td>
+  								<button class="btn btn-default">修改</button>
+  								<button class="btn btn-default">删除</button>
+  							</td>
+  						</tr>
+  						
+  					</table>
+  				</form>
+  			</div>
+  			
+  			<!--心愿单-->
+  			<div class="admin_6">
+  				<h3>心愿单列表</h3>
+  				<input type="text" class="admin_input_text" placeholder="搜索内容，回车键搜索" />
+  				<table border="1" cellspacing="" cellpadding="">
+  					<tr>
+  						<th>发布时间</th>
+  						<th>书籍照片</th>
+  						<th>发布者</th>
+  						<th>心愿报酬</th>
+  						<th>联系方式</th>
+  						<th>求书/售书</th>
+  					</tr>
+  					<tr>
+  						<td>2017.04.01<br/>11:28</td>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_6_icon glyphicon glyphicon-trash"></span></td>
+  						<td>小白</td>
+  						<td>一本奶茶</td>
+  						<td>13625638736</td>
+  						<td>求书</td>
+  					</tr>
+  					<tr>
+  						<td>2017.03.31<br/>16:35</td>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_6_icon glyphicon glyphicon-trash"></span></td>
+  						<td>小白</td>
+  						<td>一本奶茶</td>
+  						<td>13625638736</td>
+  						<td>售书</td>
+  					</tr>
+  					<tr>
+  						<td>2017.03.30<br/>08:14</td>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_6_icon glyphicon glyphicon-trash"></span></td>
+  						<td>小白</td>
+  						<td>一本奶茶</td>
+  						<td>13625638736</td>
+  						<td>求书</td>
+  					</tr>
+  					</table>
+  			</div>
+  			
+  			
+  			<!--书籍下架-->
+  			<div class="admin_7">
+  				<h3>书籍下架时间</h3>
+  				<input type="text" class="admin_input_text" placeholder="搜索内容，回车键搜索" />
+  				<table border="1" cellspacing="" cellpadding="">
+  					<tr>
+  						<th>下架时间</th>
+  						<th>书籍照片</th>
+  						<th>书名</th>
+  						<th>上架时间</th>
+  						<th>拥有者</th>
+  						<th>联系方式</th>
+  						<th>下架方式<br/>（主/被）</th>
+  						<th>备注</th>
+  					</tr>
+  					<tr>
+  						<td>2017.04.01<br/>11:28</td>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_6_icon glyphicon glyphicon-trash"></span></td>
+  						<td>黑白布局</td>
+  						<td>2017.03.21<br/>11:28</td>
+  						<td>小白</td>
+  						<td>13625638736</td>
+  						<td>主动</td>
+  						<td>成交</td>
+  					</tr>
+  					<tr>
+  						<td>2017.04.01<br/>11:28</td>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_6_icon glyphicon glyphicon-trash"></span></td>
+  						<td>黑白布局</td>
+  						<td>2017.03.21<br/>11:28</td>
+  						<td>小白</td>
+  						<td>13625638736</td>
+  						<td>主动</td>
+  						<td>不想交易了</td>
+  					</tr>
+  					<tr>
+  						<td>2017.04.01<br/>11:28</td>
+  						<td><abbr title="点击看详情"><img class="img-thumbnail" src="img/book_05.jpg"></abbr><span class="admin_6_icon glyphicon glyphicon-trash"></span></td>
+  						<td>黑白布局</td>
+  						<td>2017.03.21<br/>11:28</td>
+  						<td>小白</td>
+  						<td>13625638736</td>
+  						<td>被动</td>
+  						<td>时间到</td>
+  					</tr>
+  				</table>
+  			</div>
+  		
+ 					
+  		</div>
+  	
+  	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
