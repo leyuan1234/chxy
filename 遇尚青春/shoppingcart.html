@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的购物车</title>
+		<link href="css/index.css" type="text/css" rel="stylesheet"/>
+		<link href="css/myshoppingcart.css" type="text/css" rel="stylesheet"/>
+		<style>
+			.search{
+				border-bottom: 2px solid #f46;
+			}
+		</style>
+	</head>
+	<body>
+	<!--头部-->
+	<div class="header">
+		<div class="header-wrap">
+			<a href="index.html" class="home">首页</a>
+			<ul class="header-right">
+				<li class="s1 show-nologin"><a href="register.html">注册</a></li>
+				<li class="s1 show-nologin"><a href="log.html">登录</a></li>
+				<li class="s1 myorder has-line"><a href="#" class="display-u">我的订单</a></li>
+				<li class="s1 has-line shopping-cart-v2"><a href="shoppingcart.html" class=".cart-info-wrap">购物车</a></li>
+				<li class="s1 has-line has-icon custom-item"><a href="团队介绍/index.html">关于我们</a></li>
+				<li class="s1 has-line has-icon myxiaodiao"><a href="#">我的小店</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--搜索部分-->
+	<div class="search clearfix">
+		<div class="search-wrap clearfix">
+			<a href="#" class="logo">
+				<span style="position:absolute;font-size:20px;left:46px;top:10px;">遇尚青春</span>
+				<span style="position:absolute;font-size:14px;left:56px;top:39px;color: #ff94c6;">Let's Go</span>
+			</a>
+			<div class="normal-search-content">
+				<div class="top_nav_search" id="nav_search_form">
+					<!--搜索框-->
+					<div class="search_inner_box clearfix">
+						<div class="selectbox">
+							<span class="selected">搜商品</span>
+							<ol>
+								<li class="current"></li>
+								<li><a href="#">店铺</a></li>
+							</ol>
+						</div>
+						<form action="#" id="top_nav_form">
+							<input type="text" placeholder="露背无袖连衣裙" class="ts_txt f1"/>
+							<input type="submit" value="搜索" class="ts_btn"/>
+							<input type="hidden" name="t" vlue="bao" id="select-type"/>
+						</form>
+					</div>
+					<div class="ts_hotwords">
+						<a href="#" class="ts_hotword" style="color: #ff4466;">连衣裙</a>
+						<a href="#" class="ts_hotword" style="color: #666;;">睡衣</a>
+						<a href="#" class="ts_hotword" style="color: #666;">小白鞋</a>
+						<a href="#" class="ts_hotword" style="color:#666;">手机壳</a>
+						<a href="#" class="ts_hotword" style="color: #ff4466;">短袖T恤</a>
+						<a href="#" class="ts_hotword" style="color: #666;">凉鞋</a>
+						<a href="#" class="ts_hotword" style="color: #666;">口红</a>
+						<a href="#" class="ts_hotword" style="color: #666;">吊带背心</a>
+						<a href="#" class="ts_hotword" style="color: #ff4466;">时尚套装</a>
+					</div>
+				</div>
+			</div>
+			<div class="mid-fr">
+				<img src="img/index/tip-3.png"/>
+			</div>
+		</div>
+	</div>
+		<div class="containner">
+			<p style="font-size: 18px; font-weight: bold; text-align: left; color: #C5C1AA;">全部商品</p>
+			<div>
+				<table id="producttable">
+				<thead>
+					<tr>
+						<th class="cart_table_check_wrap">
+							<input type="checkbox" name="selectAll" />
+							全选
+						</th>
+						<th class="cart_table_goods_wrap"></th>
+						<th class="cart_table_goodinfo_wrap">商品信息</th>
+						<th class="cart_table_price_wrap">单价（元）</th>
+						<th class="cart_table_count_wrap">数量</th>
+						<th class="cart_table_totle_wrap">小计</th>
+						<th class="cart_table_opration_wrap">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="storebox">
+						<td>
+							<input type="checkbox" name="storeselect" />
+						</td>
+						<td>
+							<a href="#" style="margin-left: -200px;line-height: 24px;">韩儿阁 </a>
+							<a href="#"><span style="margin-left: 50px;">满100减5</span></a>
+							<a href="#"><span style="margin-left: 50px;"><span style="color: red; font-size: 14px;">[&nbsp;</span>优惠券<span style="color: red; font-size: 14px;">&nbsp;]</span></span></a>
+						</td>
+					</tr>
+					<tr class="productbox" id="one">
+						<td>
+							<input type="checkbox" name="isSelect" />
+						</td>				
+						<td>
+							<img src="img/du/upload_1f4l0g83700iec066b0d41ll662kb_640x960.jpg_100x100.jpg" style="float: left;"/>
+							<p style="display: block; float: left; line-height: 80px;"><a href="#">&nbsp;&nbsp;《韩儿阁》春款韩版新款小清新宽松破洞背带牛仔短裤 </a></p>
+						</td>
+						<td>
+							<p>颜色：蓝色<br/>尺码：s</p>
+						</td>
+						<td>
+							<p>85.0<br/>59.0<br/>7折</p>
+						</td>
+						<td>
+							<input type="text" name="p_count" style="width: 20px; text-align: center;" value="1"/>
+						</td>
+						<td>
+							<p>59.5</p>
+						</td>
+						<td>
+							<a href="#" onclick="display()">删除</a>
+						</td>
+					</tr>
+					<tr class="storebox">
+						<td>
+							<input type="checkbox" name="storeselect" />
+						</td>
+						<td>
+							<a href="#" style="margin-left: -200px;line-height: 24px;">mummy </a>
+						</td>
+					</tr>
+					<tr class="productbox" id="two">
+						<td>
+							<input type="checkbox" name="isSelect" />
+						</td>				
+						<td>
+							<img src="img/du/167147021_3a1l7g6ghc5bl8jgldj8j9681fk0h_640x876.jpg_100x100.jpg" style="float: left;"/>
+							<p style="display: block; float: left; line-height: 80px;"><a href="#">  &nbsp;&nbsp;春夏百搭宽松显瘦手工磨破翻边吊带牛仔背带短裤女 </a></p>
+						</td>
+						<td>
+							<p>颜色：浅蓝<br/>尺码：s</p>
+						</td>
+						<td>
+							<p>85.58<br/>59.0<br/>7折</p>
+						</td>
+						<td>
+							<input type="text" name="p_count" style="width: 20px; text-align: center;" value="1"/>
+						</td>
+						<td>
+							<p>59.5</p>
+						</td>
+						<td>
+							<a href="#" onclick="hide()">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div id="calculatebar">
+				<div>
+					<ul>
+					<li><input type="checkbox" name="selectallgood"/>&nbsp;&nbsp;全选</li>
+					<li><a href="#">删除</a></li>
+					<li><a href="#">清空失效商品</a></li>
+					<li><a href="#">移入收藏夹</a></li>
+				</ul>
+				</div>
+				<div class="calculateprice">
+					<p>共有<span>2</span>件商品，总计<span style="color: red;">￥0.00元</span></p>
+				</div>
+			</div>
+		</div>
+	<script>
+		function hide(){
+		    document.getElementById("two").style.display="none";
+		}
+		function display() {
+            document.getElementById("one").style.display="none";
+        }
+	</script>
+	<div style="clear: both;"></div>
+	<footer>
+		<hr />
+		<p style="font-size: 12px; color: #666666; margin-top: 20px;">关于我们     ©2017 AiShangQinChun.com 10先锋团队</p>
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>团队介绍主页</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:#333333;
+        }
+        .all{
+            width:1240px;
+            margin:0 auto;
+        }
+       .team-name {
+            width:1240px;
+            background:#333333;
+            margin:2rem auto;
+            text-align:center;
+            perspective:800px;
+            position: relative;
+            font-size:4rem; ;
+        }
+
+        span {
+            font-family: 'Alfa Slab One', cursive;
+            display:inline-block;
+            margin-left: -20px;
+            color:#FFF;
+            transform-origin: 50% 70%;
+        }
+
+
+        span:nth-child(2n) {
+            color:#95b8cb;
+        }
+
+        span:nth-child(1) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards,
+            drop 4s 4s forwards;
+        }
+
+        span:nth-child(2) {
+            margin-right:30px;
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .2s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards,
+            drop 4s 4.2s forwards;
+        }
+
+        span:nth-child(3) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .4s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards,
+            drop 4s 4.4s forwards;
+        }
+
+        span:nth-child(4) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .6s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards,
+            drop 4s 4.6s forwards;
+        }
+
+        span:nth-child(5) {
+            margin-right:30px;
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .8s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.8s forwards,
+            drop 4s 4.8s forwards;
+        }
+
+        span:nth-child(6) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3s forwards,
+            drop 4s 5s forwards;
+        }
+
+        span:nth-child(7) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.2s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.2s forwards,
+            drop 4s 5.2s forwards;
+        }
+
+        span:nth-child(8) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.4s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.4s forwards,
+            drop 4s 5.4s forwards;
+        }
+
+        span:nth-child(9) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.6s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.6s forwards,
+            drop 4s 5.6s forwards;
+        }
+        span:nth-child(10) {
+            animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.8s both,
+            flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.8s forwards,
+            drop 4s 5.6s forwards;
+        }
+        @keyframes flipUp {
+            from {transform: rotateX(90deg);}
+            to {transform: rotateX(0deg);}
+        }
+
+        @keyframes flipDown {
+            to {transform: rotateX(-180deg);}
+        }
+
+        @keyframes drop {
+            from {transform: rotateX(-180deg);}
+            to {transform: translateY(2000px);}
+        }
+
+        h2{
+            color:white;
+            margin-bottom:20px;
+        }
+        .one,.two,.three,.four{
+            float:left;
+            box-sizing: border-box;
+            width:296px;
+            height:555px;
+            margin-right:18px;
+        }
+        .four{
+            margin-right:0;
+        }
+        .one-top{
+            width:296px;
+            height:173px;
+            background:#999933;
+            color:white;
+            text-align:center;
+            line-height:173px;
+            font-size:20px;
+            margin-bottom:18px;
+        }
+        img{
+            width:296px;
+            height:364px;
+        }
+        .two-top{
+            height:364px;
+        }
+        .two-botttom{
+            width:296px;
+            height:173px;
+            background:#993333;
+            color:white;
+            text-align:center;
+            line-height:173px;
+            font-size:20px;
+            margin-top:18px;
+        }
+        .three .one-top{
+            background:#339966;
+        }
+        .four img{
+            width:296px;
+            height:173px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="team-name">
+        <span>1</span>
+        <span>0</span>
+        <span>X</span>
+        <span>I</span>
+        <span>A</span>
+        <span>N</span>
+        <span>F</span>
+        <span>E</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+    <header>
+        <h2><a href="../index.html" style="color:#fff;">团队介绍</a></h2>
+    </header>
+    <article>
+        <div class="one">
+            <a href="we.html"><div class="one-top">我们</div></a>
+            <div class="one-bottom">
+                <a href="member1.html"><img src="img/B2.jpg"/></a>
+                </div>
+            </div>
+    </article>
+        </div>
+        <div class="two">
+            <div class="two-top"><a href="member2.html"><img src="img/02.jpg"/></a></div>
+            <a href="member3.html"><div class="two-botttom">组员三</div></a>
+        </div>
+        <div class="three">
+            <a href="member4.html"><div class="one-top">组员四</div></a>
+            <div class="one-bottom"><a href="member5.html"><img src="img/03.jpg"/></a></div>
+        </div>
+        <div class="four">
+            <div class="one-top"><a href="#"><img src="img/04.jpg"/></a></div>
+            <a href="member6.html"><div class="one-top" style="background:#CC9933;" >组员六</div></a>
+            <a href="member7.html"><div class="one-top" style="background:#006699;">组员七</div></a>
+        </div>
+    </article>
+</div>
+</body>
+</html>
